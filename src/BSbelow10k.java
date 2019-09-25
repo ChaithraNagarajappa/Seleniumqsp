@@ -21,7 +21,7 @@ public class BSbelow10k {
 		driver.findElement(By.xpath("//span[@data-displayname=\"below rs 10000\"]")).click();
 		driver.findElement(By.xpath("//img[@alt=\"The Roslyn Ring\"]")).click();
 		driver.findElement(By.id("buy-now")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		WebElement err = driver.findElement(By.xpath("//div[@class=\"formErrorContent\"]"));
 		System.out.println(err.getText());
 		driver.close();
